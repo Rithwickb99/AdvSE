@@ -26,7 +26,8 @@ Working Methodology -
 
 Performance Comparision - 
 After evaluating the algorithms, all performance metrics are compared. (Accuracy, AUC, F1-score, Precision, Recall scores) of all the applied algorithms on my dataset are given below.
-![image](https://user-images.githubusercontent.com/95888723/145663336-93419cea-b8f3-444d-a73a-a8966ee53d65.png)
+![image](https://user-images.githubusercontent.com/95888723/145664275-413a82f1-7b5e-4604-a86e-8564bd1bebb8.png)
+
 
 Developing Web Application - Creating Model using Pickle Library
 I have converted the resultant model which is in the form of a python object into a character stream using pickling. (pickle library) and saved the file as model.pkl and taken two instances from dataset to check accuracy.
