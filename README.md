@@ -17,12 +17,40 @@ At first, I took a dataset related to the project and load into the model. Then,
 
 Working Methodology - 
 1.	Understanding the dataset
-2.	Data Visualization 
-3.	Data preprocessing/cleaning
-4.	Evaluate ML Algorithms - Building models
-5.	Performance comparison and choosing the best model
-6.	Developing a web app
-7.	Deploying the web app in Heroku
+2.	
+3.	Data Visualization 
+4.	Data preprocessing/cleaning
+5.	Evaluate ML Algorithms - Building models
+6.	Performance comparison and choosing the best model
+7.	Developing a web app
+8.	Deploying the web app in Heroku
+
+Evaluation - 
+Logistic Regression
+![image](https://user-images.githubusercontent.com/95888723/145664361-3da6c199-cee1-4b86-bc69-16ba251f4f6c.png)
+![image](https://user-images.githubusercontent.com/95888723/145664364-23b9e2c5-3e27-4753-8913-7c3328406f46.png)
+
+Decision Tree Classifier
+![image](https://user-images.githubusercontent.com/95888723/145664376-887e9c5f-d087-4567-8e10-bd3207f6083a.png)
+![image](https://user-images.githubusercontent.com/95888723/145664382-86fdef81-9553-498d-a7d7-e88360162b6c.png)
+
+Random Forest Classifier
+![image](https://user-images.githubusercontent.com/95888723/145664395-d5d6811c-4f02-4671-aa0a-371f3416f7b8.png)
+![image](https://user-images.githubusercontent.com/95888723/145664398-85f7f819-2730-42c9-a129-7ba764f85fda.png)
+
+XG Booster Classifier
+![image](https://user-images.githubusercontent.com/95888723/145664406-3bd4c12c-6052-401c-a831-dadd2e2b053f.png)
+![image](https://user-images.githubusercontent.com/95888723/145664410-0b78f262-4bd7-42ad-a9e9-67b81e5c60bc.png)
+
+MLP Classifier
+![image](https://user-images.githubusercontent.com/95888723/145664419-a9ac1db2-58a3-4c08-a840-4270fd4533b8.png)
+![image](https://user-images.githubusercontent.com/95888723/145664426-9e79c771-8206-46e0-ad45-4ec3b811a6a7.png)
+
+Proposed Model - Stacking Classifier
+![image](https://user-images.githubusercontent.com/95888723/145664449-5d7e60c1-b5c5-424f-8316-489d204583d8.png)
+![image](https://user-images.githubusercontent.com/95888723/145664457-f35b1e88-b854-4e07-951d-1d2eb4a9c07c.png)
+![image](https://user-images.githubusercontent.com/95888723/145664458-c2440f35-7f51-4712-b9a9-ee7f0554a2a8.png)
+
 
 Performance Comparision - 
 After evaluating the algorithms, all performance metrics are compared. (Accuracy, AUC, F1-score, Precision, Recall scores) of all the applied algorithms on my dataset are given below.
@@ -38,6 +66,10 @@ It will automatically create “env” folder with all installed libraries.
 Next, created templates folder which will contain index.html file – to write front end code. I have written all the required code with text fields and button.
 Then, I have created app.py file which manages the input entered by user and it works like backend.
 Then, verified the webpage with few test cases.
+
+Web page Snippet
+![image](https://user-images.githubusercontent.com/95888723/145664471-eacefa64-6e11-47d7-8ec0-73e66ff5592b.png)
+
 
 RESULTS - 
 The best out of sample model performance was obtained for the Stacking Classifier (Logistic Regression + Random Forest + XGBoost Classifier) with nearly 92% accuracy. The importance of the features (in terms of how greatly they affected the coefficients) was also plotted. This provides valuable insight towards understanding which features contribute the most toward the models’ performance. From the feature importance plot, it can be inferred that Europe’s Libor rate, age of the applicant, employment variation rate, campaign, consumer confidence index, consumer price index, mode of contact (= telephone), and number of employees are some of the most important features in predicting the outcome.
